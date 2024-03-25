@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutienda Libros 4k</title>
+</head>
+<body>
+    {% for book in book_list %}
+        <ul>
+            <li>Title: {{ book.title }}</li>
+            <li>Author: {{ book.author }}</li>
+            <li>Description: {{ book.description }}</li>
+            <li>Price:  {{ book.price }}</li>
+            <li>Isbn: {{ book.Isbn}}</li>
+        </ul>
+    {% endfor %}
+</body>
+</html>
